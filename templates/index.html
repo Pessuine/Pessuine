@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="这里是噗云Pessuine，内含个人练习，小工具等。">
+    <meta name="robots" content="index,follow">
+    <title>起始页|噗云</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="Header">
+        <a href="http://pessuine.cn/" target="_blank">
+            <img src="{{ url_for('static', filename='Pessuine.png') }}" height="auto" width="auto" alt="首页" />
+        </a>
+        <div><p>网站已经运行{{already_run_days}}天,累计访问次数{{all_visits}}</p></div>
+    </div>
+
+    <div class="Body">
+        <table width="auto" border="1">
+            <tbody>
+                <tr>
+                    <th><a href="/writing" target="_blank">英语写作</a></th>
+                    <th><a href="http://thedreamer.cn/" target="_blank">自在岛屿thedreamder</a></th>
+                </tr>
+                <tr>
+                    <th><a href="/tools" target="_blank">小工具</a></th>
+                    <th><a href="https://qm.qq.com/q/P2aa2zPugi" target="_blank">QQ</a></th>
+                </tr>
+                <tr>
+                    <th><a href="{{ url_for('static', filename='Pessuine104.png') }}" target="_blank">微信公众号</a></th>
+                    <th><a href="https://b23.tv/YLBi72P" target="_blank">哔哩哔哩</a></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Pessuine</p>
+            <p><a href="http://beian.miit.gov.cn" target="_blank">鲁ICP备2023037928号-1</a></p>
+            <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37021002001152" target="_blank">鲁公网安备37021002001152号</a></p>
+        </div>
+    </footer>
+</body>
+</html>

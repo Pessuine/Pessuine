@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="这里是噗云|小工具，展示我的小工具。">
+    <meta name="robots" content="follow">
+    <title>小工具|噗云</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="Header">
+        <a href="http://pessuine.cn/" target="_blank">
+            <img src="{{ url_for('static', filename='Pessuine.png') }}" height="auto" width="auto" alt="首页" />
+        </a>
+        <div>
+            <p>网站已经运行{{already_run_days}}天,累计访问次数{{all_visits}}</p>
+            <table width="200" border="1">
+                <tbody>
+                    <tr>
+                        <td>&nbsp;正在建设中...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Pessuine</p>
+            <p><a href="http://beian.miit.gov.cn" target="_blank">鲁ICP备2023037928号-1</a></p>
+            <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37021002001152" target="_blank">鲁公网安备37021002001152号</a></p>
+        </div>
+    </footer>
+</body>
+</html>
